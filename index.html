@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">Satisfaction Survey</h1>
+        <p id="description">This is a survey carried out in order to improve the service of our company</p>
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input required type="text" class="fullwidth" name="name" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input required type="email" class="fullwidth" name="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="age">Age</label>
+                <input type="number" class="fullwidth" min=0 max=100 name="age" id="number" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <label for="select">How would you rate your experience?</label>
+                <select class="fullwidth" name="Experience" id="dropdown">
+                    <option value="Excelent">Excelent</option>
+                    <option value="Good">Good</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Bad">Bad</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <p>What did you like most about the experience?</p>
+                <label>
+                    <input type="radio" name="radio" value="val1">
+                    The attention of the staff
+                </label>
+                <label>
+                    <input type="radio" name="radio" value="val2">
+                    The installations
+                </label>
+                <label>
+                    <input type="radio" name="radio" value="val3">
+                    The quality of service
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What aspects do you value most in a company?</p>
+                <label><input type="checkbox" value="val1" name="prefeer">Staff attitude</label>
+                <label><input type="checkbox" value="val2" name="prefeer">Quality of service</label>
+                <label><input type="checkbox" value="val3" name="prefeer">Facilities</label>
+                <label><input type="checkbox" value="val4" name="prefeer">Timeouts</label>
+                <label><input type="checkbox" value="val5" name="prefeer">Costs</label>
+            </div>
+            <div class="form-group">
+                <p>What can we improve?</p>
+                <textarea class="fullwidth" name="comments" id="comments" cols="30" rows="10" placeholder="Comments or sugestions..."></textarea>
+            </div>
+            <div class="form-group"><button id="submit" class="fullwidth" type="submit">Submit</button></div>
+        </form>
+    </body>
+
+</html>
